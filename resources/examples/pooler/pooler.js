@@ -22,8 +22,8 @@ function getPools(input) {
   pools = []; // reset the pools
   populateMap(input);
 
-  for (var rowIndex=0; rowIndex<map.length; rowIndex++) {
-    for (var colIndex=0; colIndex<map[rowIndex].length; colIndex++) {
+  for (var rowIndex=0; rowIndex < map.length; rowIndex++) {
+    for (var colIndex=0; colIndex < map[rowIndex].length; colIndex++) {
       if (map[rowIndex][colIndex] == 0 && !isMapped(rowIndex, colIndex, [])) {
         var newPool = mapPool(rowIndex, colIndex, []);
 	console.log("Found New Pool:", newPool);
@@ -35,7 +35,7 @@ function getPools(input) {
 
 function populateMap(mapData) {
   var rows = mapData.split(' ');
-  for (var rowIndex=0; rowIndex<rows.length; rowIndex++) {
+  for (var rowIndex=0; rowIndex < rows.length; rowIndex++) {
     map.push(rows[rowIndex].split(''));
   }
 }
@@ -47,7 +47,7 @@ function isMapped(row, column, poolsToCheck) {
 
   var localPools = poolsToCheck.slice(0);
   var coordinate = row + "," + column;
-  for (var poolIndex = 0; poolIndex<pools.length; poolIndex++) {
+  for (var poolIndex = 0; poolIndex < pools.length; poolIndex++) {
     localPools = localPools.concat(pools[poolIndex]);
   }
 
