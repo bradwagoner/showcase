@@ -23,6 +23,9 @@ Ext.define('JavascriptShowcase.view.ExampleList', {
 		}, {
 			title : 'Flatten Array',
 			exampleToLoad : 'flatten'
+		}, {
+			title : 'Pooler',
+			exampleToLoad : 'pooler'
 		} ]
 	}
 });
