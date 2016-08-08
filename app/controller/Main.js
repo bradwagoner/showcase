@@ -128,6 +128,7 @@ Ext.define('JavascriptShowcase.controller.Main', {
 		var rubyCode = this.getExampleTemplate().get('rubyCode');
 
 		etHTML.setHtml('<pre>' + rubyCode + '</pre>');
+		etHTML.setScrollable(true);
 	},
 
 	/**
@@ -143,5 +144,6 @@ Ext.define('JavascriptShowcase.controller.Main', {
 		var jsCode = this.getExampleTemplate().get('jsCode');
 
 		etHTML.setHtml('<pre>' + jsCode + '</pre>');
+		etHTML.setScrollable(true);
 	}
 });

@@ -18,8 +18,6 @@ Ext.define('JavascriptShowcase.view.ExampleTemplate', {
 		items : [ {
 			// The container to be filled with the example code.
 			xtype : 'container',
-			layout : 'fit',
-			scrollable : true,
 			cssClass : 'func_fillMe',
 			html : 'Select a View'
 		}, {
