@@ -20,6 +20,9 @@ Ext.define('JavascriptShowcase.view.ExampleList', {
 		}, {
 			title : 'Sieve of Eratoshenes',
 			exampleToLoad : 'sieve'
+		}, {
+			title : 'Flatten Array',
+			exampleToLoad : 'flatten'
 		} ]
 	}
 });
