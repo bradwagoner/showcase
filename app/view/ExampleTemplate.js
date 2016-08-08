@@ -1,3 +1,11 @@
+/**
+ * ExampleTemplate.js
+ * 
+ * This is the template view to be populated with specific examples. When
+ * displayed it should enable/disable the buttons appropriate for the types of
+ * code snippet set in the 'rubyCode' and 'jsCode' properties.
+ */
+
 Ext.define('JavascriptShowcase.view.ExampleTemplate', {
 	extend : 'Ext.Container',
 	alias : 'widget.template',
@@ -8,12 +16,15 @@ Ext.define('JavascriptShowcase.view.ExampleTemplate', {
 		jsCode : undefined,
 
 		items : [ {
+			// The container to be filled with the example code.
 			xtype : 'container',
 			layout : 'fit',
 			scrollable : true,
 			cssClass : 'func_fillMe',
 			html : 'Select a View'
 		}, {
+			// A toolbar containing the buttons for controlling what to populate
+			// the container with.
 			xtype : 'toolbar',
 			docked : 'bottom',
 
@@ -27,9 +38,6 @@ Ext.define('JavascriptShowcase.view.ExampleTemplate', {
 			}, {
 				text : 'JS',
 				action : 'showJavascriptCode'
-			}, {
-				text : 'Run Code',
-				action : 'showExecution'
 			} ]
 		} ]
 	}

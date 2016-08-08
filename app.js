@@ -39,7 +39,8 @@ Ext.application({
 		// Destroy the #appLoadingIndicator element
 		Ext.fly('appLoadingIndicator').destroy();
 
-		// Initialize the main view
+		// Initialize a navigation view and populate it with the main list of
+		// code examples
 		Ext.Viewport.add({
 			xtype : 'navigationview',
 			items : [ {

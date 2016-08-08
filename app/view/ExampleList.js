@@ -1,3 +1,10 @@
+/**
+ * ExampleList.js
+ * 
+ * This is the main display for the app, initially loaded it will display the
+ * list of examples available for the user to select.
+ */
+
 Ext.define('JavascriptShowcase.view.ExampleList', {
 	extend : 'Ext.List',
 	alias : 'widget.examplelist',
@@ -9,10 +16,10 @@ Ext.define('JavascriptShowcase.view.ExampleList', {
 
 		data : [ {
 			title : 'Fizz Buzz!',
-			xtypeToLoad : 'fizzbuzz'
+			exampleToLoad : 'fizzbuzz'
 		}, {
 			title : 'Sieve of Eratoshenes',
-			xtypeToLoad : 'sieve'
+			exampleToLoad : 'sieve'
 		} ]
 	}
 });
